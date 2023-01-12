@@ -46,10 +46,14 @@ class App extends Component {
     console.log("data is ", filterArray);
     return (
       <div id="main">
-        <ol>
+        <ol id={`location${i}`}>
           {filterArray.map((item) => {
-            // console.log("i : ", i);
-            return <li key={`location${i++}`}>{item.name}</li>;
+            console.log(`location${i}`);
+            return (
+              <li key={`location${i}`} id={`location${i++}`}>
+                {item.name}
+              </li>
+            );
           })}
         </ol>
       </div>
