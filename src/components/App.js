@@ -49,11 +49,7 @@ class App extends Component {
         <ol>
           {filterArray.map((item) => {
             // console.log("i : ", i);
-            return (
-              <li key={`location${i++}`}>
-                {item.name}/{item.country}
-              </li>
-            );
+            return <li key={`location${i++}`}>{item.name}</li>;
           })}
         </ol>
       </div>
