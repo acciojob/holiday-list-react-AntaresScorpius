@@ -41,16 +41,7 @@ class App extends Component {
   render() {
     let i = 1;
     const filterArray = this.cityList
-      .filter((item) =>
-        [
-          "Goa",
-          "Amsterdam",
-          "New York",
-          "Darjeeling",
-          "Tokyo",
-          "Lonavala",
-        ].includes(item.name)
-      )
+      .filter((item) => item.country === "India")
       .map((filterItem) => filterItem);
     console.log("data is ", filterArray);
     return (
