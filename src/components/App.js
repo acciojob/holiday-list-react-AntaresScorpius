@@ -43,12 +43,12 @@ class App extends Component {
     const filterArray = this.cityList
       .filter((item) => item.country === "India")
       .map((filterItem) => filterItem);
-    console.log("data is ", filterArray);
+    // console.log("data is ", filterArray);
     return (
       <div id="main">
         <ol id={`location${i}`}>
           {filterArray.map((item) => {
-            console.log(`location${i}`);
+            // console.log(`location${i}`);
             return (
               <li key={`location${i}`} id={`location${i++}`}>
                 {item.name}
